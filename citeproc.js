@@ -3852,7 +3852,7 @@ CSL.Engine = function (sys, style, lang, forceLang) {
 
     // Build skip-word regexp
     function makeRegExp(lst) {
-        var lst = lst.slice();
+        
         var ret = new RegExp( "(?:(?:[?!:]*\\s+|-|^)(?:" + lst.join("|") + ")(?=[!?:]*\\s+|-|$))", "g");
         return ret;
     }
